@@ -1,2 +1,1 @@
-# containarium-cloud-sandbox
-Sandbox repo for exercising Containarium-cloud's diff-crew / PR-opener flow end-to-end (cloud#1738, cloud#1549)
+This repository is a sandbox for testing Containarium-cloud's diff-crew PR flow.
