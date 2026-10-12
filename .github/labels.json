@@ -1,0 +1,10 @@
+[
+  {"name": "scope:product",        "color": "1d76db", "description": "Routes the issue to the product skill"},
+  {"name": "scope:architecture",   "color": "5319e7", "description": "Routes the issue to the architecture skill"},
+  {"name": "scope:engineering",    "color": "0e8a16", "description": "Routes the issue to the implementing skill"},
+  {"name": "agent:queued",         "color": "fbca04", "description": "A run is queued (set by the dispatcher)"},
+  {"name": "agent:running",        "color": "fbca04", "description": "A run is in progress (set by the dispatcher)"},
+  {"name": "agent:done",           "color": "0e8a16", "description": "The run finished (set by the dispatcher)"},
+  {"name": "agent:failed",         "color": "b60205", "description": "The run failed or timed out (set by the dispatcher)"},
+  {"name": "agent:needs-approval", "color": "d93f0b", "description": "A human must release this follow-up before an agent picks it up"}
+]
