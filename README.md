@@ -10,6 +10,7 @@ exists so the flow can be run against something real and then cleaned up.
 | Path | Purpose |
 | --- | --- |
 | `text/slug.go`, `text/slug_test.go` | One tiny function with a green test suite. It has one known, deliberate gap (see the issue fixtures), small enough for a single focused change. |
+| `text/reading_time.go`, `text/reading_time_test.go` | Estimates reading time for a block of text at a fixed 200 words/minute, with a green test suite covering the empty, whitespace-only, one-minute-floor, and rounding cases. |
 | `fixtures/issues/engineering-slugify-separators.md` | A solvable issue: a clear gap, a table of expected behaviour, acceptance criteria. Expect a small PR touching `text/slug.go` and `text/slug_test.go`. |
 | `fixtures/issues/unresolvable-question.md` | A product question, not a code change. Expect **no edits** and a stated reason. |
 | `.github/labels.json` | The label set the tracker flow uses (`scope:*` routes an issue to a skill, `agent:*` is run state). |
