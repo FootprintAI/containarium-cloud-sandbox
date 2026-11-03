@@ -1,0 +1,27 @@
+name: sales-demo
+
+on:
+  pull_request:
+    paths: ["sales-demo/**", ".github/workflows/sales-demo.yml"]
+  push:
+    branches: [main]
+    paths: ["sales-demo/**", ".github/workflows/sales-demo.yml"]
+
+permissions:
+  contents: read
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: sales-demo
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: sales-demo/requirements.txt
+      - run: pip install -r requirements.txt
+      - run: python -m pytest -q
